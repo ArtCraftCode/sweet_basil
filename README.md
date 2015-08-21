@@ -43,3 +43,9 @@ this will dictate which folder things are deployed to, so don't pick the wrong v
 #### `"optional commit message addition"`
 
 is optional, but it will be added to the end of the git commit.
+
+#### example
+
+```
+$ scripts/version.sh 0.0.1 "beta release with grid"
+```
