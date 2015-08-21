@@ -11,3 +11,5 @@ s3_website push
 git add builds
 git add stylesheets
 git commit -m "build & deploy version $1 [$2]"
+git tag v$1
+git push origin v$1
