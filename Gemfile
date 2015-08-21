@@ -1,3 +1,5 @@
 ruby "2.1.2"
 
 gem "compass"
+gem "bourbon"
+gem "neat"
