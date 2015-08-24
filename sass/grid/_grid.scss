@@ -1,0 +1,20 @@
+$columns: (
+  one: ( class: 'col-1', size: 1 ),
+  two: ( class: 'col-2', size: 2 ),
+  three: ( class: 'col-3', size: 3 ),
+  four: ( class: 'col-4', size: 4 ),
+  five: ( class: 'col-5', size: 5 ),
+  six: ( class: 'col-6', size: 6 ),
+  seven: ( class: 'col-7', size: 7 ),
+  eight: ( class: 'col-8', size: 8 ),
+  nine: ( class: 'col-9', size: 9 ),
+  ten: ( class: 'col-10', size: 10 ),
+  eleven: ( class: 'col-11', size: 11 ),
+  twelve: ( class: 'col-12', size: 12 )
+);
+
+@each $column, $column-map in $columns {
+  .#{map-get($column-map, 'class')} {
+    @include span-columns(map-get($column-map, 'size'));
+  }
+}
