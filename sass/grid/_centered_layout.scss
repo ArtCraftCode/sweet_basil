@@ -1,0 +1,41 @@
+.centered {
+  @include outer-container;
+}
+
+.centered--side, .centered--content {
+  padding: 2.25%;
+}
+
+@mixin hide-side-panels {
+  .centered--side {
+    display: none;
+  }
+  .centered--content {
+    @include span-columns(12 of 12);
+  }
+}
+
+// giant computers
+@include media($desktop) {
+  .centered--side { @include span-columns(3 of 12); }
+  .centered--content { @include span-columns(6 of 12); }
+}
+
+// standard sizes (mostly)
+@include media($tablet, $laptop) {
+  .centered--side { @include span-columns(2 of 12); }
+  .centered--content { @include span-columns(8 of 12) ;}
+}
+
+// small side panels in a small tablet
+@include media($tablet-small) {
+  .centered--side { @include span-columns(1 of 12); }
+  .centered--content { @include span-columns(10 of 12); }
+}
+
+// hide side panels for mobile
+@each $size in $mobile, $mobile-small {
+  @include media($mobile-small) {
+    @include hide-side-panels;
+  }
+}
