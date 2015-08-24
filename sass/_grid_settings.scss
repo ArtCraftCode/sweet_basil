@@ -1,11 +1,19 @@
 @import "neat/neat-helpers";
 
-// Change the grid settings
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 10;
+// default overrides
 // $max-width: 1200px;
 
-// Define your breakpoints
-// $tablet: new-breakpoint(max-width 768px 8);
-// $mobile: new-breakpoint(max-width 480px 4);
+// breakpoints
+
+// landscape
+$mobile-small: new-breakpoint(max-width 568px 6);
+$mobile: new-breakpoint(max-width 736px 8);
+$tablet-small: new-breakpoint(max-width 1024px 12);
+$tablet: new-breakpoint(max-width 1280px 12);
+$laptop: new-breakpoint(max-width 1200px 12);
+$desktop: new-breakpoint(max-width 2560px 12);
+
+// potrait lol
+$portait-mobile-small: new-breakpoint(max-width 320px 4);
+$potrait-mobile-medium: new-breakpoint(max-width 375px 4);
+$portrait-tablet: new-breakpoint(max-width 768px 8);
