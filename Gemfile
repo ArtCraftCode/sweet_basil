@@ -9,7 +9,3 @@ gem "neat"
 
 # deploy
 gem "s3_website"
-
-# docs
-gem "middleman", "~>3.3.10"
-gem "middleman-livereload", "~> 3.1.0"
