@@ -1,0 +1,39 @@
+@import "grid_settings";
+
+.centered {
+  @include outer-container;
+}
+
+.centered--content {
+  padding: $padding;
+  // default to no shifting for smaller screens
+  @include span-columns(12 of 12);
+}
+
+
+// giant computers
+@include media($desktop) {
+  .centered--content {
+    @include span-columns(6 of 12);
+    @include shift(3);
+  }
+}
+
+// standard sizes (mostly)
+@each $size in $tablet, $laptop {
+  @include media($size) {
+    .centered--content {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
+  }
+}
+
+// small side panels in a small tablet
+@include media($tablet-small) {
+  .centered--content {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
+}
+

@@ -1,0 +1,39 @@
+.columns {
+  @include outer-container;
+}
+
+.column--side, .column--content {
+  padding: $padding;
+}
+
+@mixin hide-side-panels {
+  .column--side {
+    display: none;
+  }
+  .column--content {
+    @include span-columns(12 of 12);
+  }
+}
+
+// giant computers
+@include media($desktop) {
+  .column--side { @include span-columns(3 of 12); }
+  .column--content { @include span-columns(6 of 12); }
+}
+
+// standard sizes (mostly)
+@include media($tablet, $laptop) {
+  .column--side { @include span-columns(2 of 12); }
+  .column--content { @include span-columns(8 of 12) ;}
+}
+
+// small side panels in a small tablet
+@include media($tablet-small) {
+  .column--side { @include span-columns(1 of 12); }
+  .column--content { @include span-columns(10 of 12); }
+}
+
+// hide side panels for mobile
+@include media($mobile, $mobile-small) {
+  @include hide-side-panels;
+}

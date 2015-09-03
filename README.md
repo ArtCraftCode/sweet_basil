@@ -21,7 +21,7 @@ the `version` script will:
 - **overwrite files locally and in production**
 - compile the sass to production standards in a folder created based on the version number provided
 - copy both the sass *and* the css to a versioned `builds` folder (because version control should be redundant always lol)
-- pushes your changes to the aws s3 cloudfront bucket *into the versioned folder* you have configured in your `s3_website.yml` 
+- pushes your changes to the aws s3 cloudfront bucket *into the versioned folder* you have configured in your `s3_website.yml`
 - adds and commits your versioned changes to git (includes `builds` and `stylesheets` folders *only*)
 - tags your commit with the version
 - pushes your tags to the server

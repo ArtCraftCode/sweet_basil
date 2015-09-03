@@ -5,5 +5,10 @@
 
 @import "compass/reset";
 @import "bourbon/bourbon";
-@import "grid_settings";
+@import "grid/grid_settings";
 @import "neat/neat";
+
+// standard multi column grid
+@import "grid/grid";
+@import "grid/centered_layout";
+@import "grid/column_layout";
