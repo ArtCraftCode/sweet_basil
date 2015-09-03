@@ -12,6 +12,19 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="stylesheets/main.css">
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #999;
+      float: left;
+      margin-right: 5%;
+      margin-bottom: 5%;
+    }
+    .clear {
+      clear: left;
+    }
+  </style>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -43,6 +56,91 @@
 
         <p><em>this page conveniently uses sweet basil, so you can see a lot of stuff in action.</em></p>
       </article>
+
+      <article id="colors">
+        <h1>colors</h1>
+
+        <p>every color scheme has 5 colors:</p>
+
+        <ul>
+          <li>white: ... white, duh</li>
+          <li>gray: whatever gray is used for the body text</li>
+          <li>primary: the main accent color, usually very bright</li>
+          <li>secondary: the secondary accent color, usually very bright</li>
+          <li>light: a lighter accent color suited for backgrounds</li>
+        </ul>
+
+        <p>all colors are displayed in that order.</p>
+
+        <h2>helper classes</h2>
+
+        <p>every color scheme has the following helper classes:</p>
+
+        <ul>
+          <li>background-$COLOR</li>
+          <li>text-$COLOR</li>
+          <li>button-background-$COLOR</li>
+          <li>button-text-$COLOR</li>
+        </ul>
+
+        <p>... where $COLOR is the name of the color you wish to use. they will work on all elements, but will provide no other styling.</p>
+
+        <h2>color schemes</h2>
+
+        <p>to use a color scheme, add the color scheme name to the body element's class. you don't have to do anything else!</p>
+
+        <p>if you're using the default color scheme, you don't have to do anything at all.</p>
+
+        <aside class="default">
+          <h3>default</h3>
+          <div class="box background-white"></div>
+          <p>this is white. text shouldn't be white.</p>
+          <div class="clear"></div>
+
+          <div class="box background-gray"></div>
+          <p class="text-gray">this is gray text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-primary"></div>
+          <p class="text-primary">this is primary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-secondary"></div>
+          <p class="text-secondary">this is secondary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-light"></div>
+          <p class="text-light">this is light text.</p>
+          <div class="clear"></div>
+        </aside>
+
+        <aside class="vibrant">
+          <h3>vibrant</h3>
+          <div class="box background-white"></div>
+          <p>this is white. text shouldn't be white.</p>
+          <div class="clear"></div>
+
+          <div class="box background-gray"></div>
+          <p class="text-gray">this is gray text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-primary"></div>
+          <p class="text-primary">this is primary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-secondary"></div>
+          <p class="text-secondary">this is secondary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-light"></div>
+          <p class="text-light">this is light text.</p>
+          <div class="clear"></div>
+        </aside>
+
+
+
+      </article>
+
       <article id="typography">
         <h1>typography</h1>
         <p><em>paragraph, italic</em></p>
@@ -74,7 +172,7 @@
 <script>
   $(document).ready(function() {
     $('article').hide();
-    $('article#intro').show();
+    $('article#colors').show();
 
     $('a').click(function(event) {
       var link = this;
