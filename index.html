@@ -12,20 +12,292 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="stylesheets/main.css">
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #999;
+      float: left;
+      margin-right: 5%;
+      margin-bottom: 5%;
+    }
+    .clear {
+      clear: left;
+    }
+  </style>
 </head>
 <body>
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div class="centered">
-    <div class="centered--content">
-      <h1>sweet basil</h1>
-      <h2>sample page</h2>
+  <div class="columns">
+    <div class="column--side">
+      <ul class="unformatted flush">
+        <li><a id="colors" href="#colors">colors</a></li>
+        <li><a id="typography" href="#typography">typography</a></li>
+        <li><a id="lists" href="#lists">lists</a></li>
+        <li><a id="links" href="#links">links</a></li>
+        <li><a id="menus" href="#menus">menus</a></li>
+        <li><a id="headers" href="#headers">headers</a></li>
+        <li><a id="footers" href="#footers">footers</a></li>
+        <li><a id="tables" href="#tables">tables</a></li>
+        <li><a id="buttons" href="#buttons">buttons</a></li>
+        <li><a id="layouts" href="#layouts">layouts</a></li>
+        <br>
+        <li><a id="intro" href="#intro">close allthethings</a></li>
+        <li><a id="everything" href="#">show allthethings \o/</a></li>
+      </ul>
+    </div>
+    <div class="column--content">
+      <article id="intro">
+        <h1>oh look, things</h1>
+        <p>there are more things if you click over there to the left.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, possimus. Quam nobis incidunt voluptatum quia sit sint consectetur neque aperiam vitae, tenetur aliquam suscipit pariatur aspernatur nostrum labore molestiae animi.</p>
+        <p><em>this page conveniently uses sweet basil, so you can see a lot of stuff in action.</em></p>
+      </article>
+
+      <article id="colors">
+        <h1>colors</h1>
+
+        <p>every color scheme has 5 colors:</p>
+
+        <ul>
+          <li>white: ... white, duh</li>
+          <li>gray: whatever gray is used for the body text</li>
+          <li>primary: the main accent color, usually very bright</li>
+          <li>secondary: the secondary accent color, usually very bright</li>
+          <li>light: a lighter accent color suited for backgrounds</li>
+        </ul>
+
+        <p>all colors are displayed in that order.</p>
+
+        <h2>helper classes</h2>
+
+        <p>every color scheme has the following helper classes:</p>
+
+        <ul>
+          <li>background-$COLOR</li>
+          <li>text-$COLOR</li>
+          <li>button-background-$COLOR</li>
+          <li>button-text-$COLOR</li>
+        </ul>
+
+        <p>... where $COLOR is the name of the color you wish to use. they will work on all elements, but will provide no other styling.</p>
+
+        <h2>color schemes</h2>
+
+        <p>to use a color scheme, add the color scheme name to the body element's class. you don't have to do anything else!</p>
+
+        <p>if you're using the default color scheme, you don't have to do anything at all.</p>
+
+        <aside class="default">
+          <h3>default</h3>
+          <div class="box background-white"></div>
+          <p>this is white. text shouldn't be white.</p>
+          <div class="clear"></div>
+
+          <div class="box background-gray"></div>
+          <p class="text-gray">this is gray text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-primary"></div>
+          <p class="text-primary">this is primary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-secondary"></div>
+          <p class="text-secondary">this is secondary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-light"></div>
+          <p class="text-light">this is light text.</p>
+          <div class="clear"></div>
+        </aside>
+
+        <aside class="vibrant">
+          <h3>vibrant</h3>
+          <div class="box background-white"></div>
+          <p>this is white. text shouldn't be white.</p>
+          <div class="clear"></div>
+
+          <div class="box background-gray"></div>
+          <p class="text-gray">this is gray text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-primary"></div>
+          <p class="text-primary">this is primary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-secondary"></div>
+          <p class="text-secondary">this is secondary text.</p>
+          <div class="clear"></div>
+
+          <div class="box background-light"></div>
+          <p class="text-light">this is light text.</p>
+          <div class="clear"></div>
+        </aside>
+      </article>
+
+      <article id="typography">
+        <h1>typography</h1>
+        <p><em>paragraph, italic</em></p>
+
+        <p><strong>paragraph, strong</strong></p>
+
+        <p><small>paragraph, small</small></p>
+
+        <small>small, no paragraph</small>
+
+        <p>Marshmallow chocolate sweet. Marzipan donut chupa chups halvah. Tootsie roll sweet candy canes. Fruitcake halvah cheesecake. Ice cream soufflé lemon drops lemon drops tootsie roll jelly sugar plum fruitcake. Icing fruitcake ice cream wafer pastry dragée liquorice sugar plum lemon drops. Cotton candy sesame snaps gingerbread candy canes bonbon gingerbread. Pastry cheesecake ice cream jujubes cookie gingerbread dessert. Cake pie topping tootsie roll. Danish candy canes chocolate dessert ice cream fruitcake biscuit.p</p>
+
+        <h1>h1 / sweet basil</h1>
+        <h2>h2 / sample page</h2>
+        <h3>h3 / sample heads</h3>
+        <h4>h4 / with text below</h4>
+        <h5>h5 / fancy woo yay headings</h5>
+        <h6>h6 / also available as classes</h6>
+      </article>
+
+      <article id="lists">
+        <h1>lists</h1>
+
+        <h2>unordered list</h2>
+        <ul>
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ul>
+              <li>One!</li>
+              <li>Two!</li>
+            </ul>
+          </li>
+          <li>
+            Double nested list
+            <ul>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ul>
+                  <li>Thing two</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>End of list!</li>
+        </ul>
+
+        <h2>ordered list</h2>
+        <ol>
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ol>
+              <li>One!</li>
+              <li>Two!</li>
+            </ol>
+          </li>
+          <li>
+            Double nested list
+            <ol>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ol>
+                  <li>Thing two</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>End of list!</li>
+        </ol>
+
+        <h2>unordered, unbulleted list</h2>
+        <p>add the 'unformatted' class</p>
+
+        <p><strong>note:</strong> this still has the padding.</p>
+        <ul class="unformatted">
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ul>
+              <li>One!</li>
+              <li>Two!</li>
+            </ul>
+          </li>
+          <li>
+            Double nested list
+            <ul>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ul>
+                  <li>Thing two</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>End of list!</li>
+        </ul>
+
+        <h2>unordered, unbulleted, flush list</h2>
+        <p>add the 'unformatted' and 'flush' classes</p>
+        <p><strong>note:</strong> this only flushes the first level.</p>
+        <ul class="unformatted flush">
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ul>
+              <li>One!</li>
+              <li>Two!</li>
+            </ul>
+          </li>
+          <li>
+            Double nested list
+            <ul>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ul>
+                  <li>Thing two</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>End of list!</li>
+        </ul>
+      </article>
+
+      <article id="layouts">
+        <h1>layouts</h1>
+      </article>
     </div>
   </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('article').hide();
+    $('article#lists').show();
+
+    $('a').click(function(event) {
+      var link = this;
+      var id = this.id;
+      event.preventDefault();
+      $('article').hide();
+      $('article#' + id).show();
+    });
+
+    $('a#everything').click(function(event) {
+      event.preventDefault();
+      $('article').show();
+    })
+  });
+</script>
 
 </body>
 </html>

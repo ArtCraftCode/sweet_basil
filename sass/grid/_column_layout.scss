@@ -18,19 +18,19 @@
 // giant computers
 @include media($desktop) {
   .column--side { @include span-columns(3 of 12); }
-  .column--content { @include span-columns(6 of 12); }
+  .column--content { @include span-columns(9 of 12); }
 }
 
 // standard sizes (mostly)
 @include media($tablet, $laptop) {
   .column--side { @include span-columns(2 of 12); }
-  .column--content { @include span-columns(8 of 12) ;}
+  .column--content { @include span-columns(10 of 12);}
 }
 
 // small side panels in a small tablet
 @include media($tablet-small) {
   .column--side { @include span-columns(1 of 12); }
-  .column--content { @include span-columns(10 of 12); }
+  .column--content { @include span-columns(11 of 12); }
 }
 
 // hide side panels for mobile

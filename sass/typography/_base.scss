@@ -1,0 +1,28 @@
+body {
+  @include font-stack;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+small {
+  @include font-stack(0.75);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+  padding-top: $base-padding;
+  padding-bottom: $base-padding/2;
+}
+
+h1, .h1 { @include font-stack(3.5); }
+h2, .h2 { @include font-stack(2.65); }
+h3, .h3 { @include font-stack(2.15); }
+h4, .h4 { @include font-stack(1.65); }
+h5, .h5 { @include font-stack(1.15); }
+h6, .h6 { @include font-stack(1.05); }
