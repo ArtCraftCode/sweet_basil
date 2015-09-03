@@ -37,3 +37,24 @@ ol {
     }
   }
 }
+
+// NO BULLETS FOR YOU SIR
+ul.unformatted {
+  &.flush {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  li {
+    list-style-type: none;
+
+    // nested one level
+    ul li {
+      list-style-type: none;
+    }
+
+    // nested two levels
+    ul li ul li {
+      list-style-type: none;
+    }
+  }
+}
