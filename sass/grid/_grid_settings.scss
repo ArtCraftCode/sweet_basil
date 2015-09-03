@@ -3,6 +3,9 @@
 // default overrides
 // $max-width: 1200px;
 
+// padding
+$padding: 2.25%;
+
 // breakpoints
 
 // landscape
@@ -10,7 +13,7 @@ $mobile-small: new-breakpoint(max-width 568px 6);
 $mobile: new-breakpoint(max-width 736px 8);
 $tablet-small: new-breakpoint(max-width 1024px 12);
 $tablet: new-breakpoint(max-width 1280px 12);
-$laptop: new-breakpoint(max-width 1200px 12);
+$laptop: new-breakpoint(max-width 1400px 12);
 $desktop: new-breakpoint(max-width 2560px 12);
 
 $LANDSCAPE: $mobile-small, $mobile, $tablet-small, $tablet, $laptop, $desktop;
