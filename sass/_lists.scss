@@ -1,6 +1,8 @@
 ul, ol {
   padding-left: $base-padding * 2;
   padding-right: $base-padding;
+  padding-top: $base-padding / 2;
+  padding-bottom: $base-padding / 2;
 }
 
 // regular unordered list
@@ -41,8 +43,7 @@ ol {
 // NO BULLETS FOR YOU SIR
 ul.unformatted {
   &.flush {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0px;
   }
   li {
     list-style-type: none;
