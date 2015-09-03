@@ -9,6 +9,11 @@
 @import "neat/neat";
 
 // standard multi column grid
+// optional columns with or without content
 @import "grid/grid";
 @import "grid/centered_layout";
 @import "grid/column_layout";
+
+// all the typography \o/
+@import "typography/var"; // must be first
+@import "typography/base";

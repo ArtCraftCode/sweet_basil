@@ -1,0 +1,11 @@
+$font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$base-font-size: 1.25rem;
+$base-line-height: 2rem;
+$base-padding: 4%;
+
+@mixin font-stack($adjustment: 1) {
+  font-family: $font-family;
+  font-size: $base-font-size * $adjustment;
+  line-height: $base-line-height * $adjustment;
+}
