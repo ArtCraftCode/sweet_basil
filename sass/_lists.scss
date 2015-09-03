@@ -1,0 +1,39 @@
+ul, ol {
+  padding-left: $base-padding * 2;
+  padding-right: $base-padding;
+}
+
+// regular unordered list
+ul {
+  li {
+    list-style-type: disc;
+
+    // nested one level
+    ul li {
+      list-style-type: circle;
+    }
+
+    // nested two levels
+    ul li ul li {
+      list-style-type: square;
+    }
+  }
+}
+
+
+// ordered list
+ol {
+  li {
+    list-style-type: decimal;
+
+    // nested one level
+    ol li {
+      list-style-type: lower-latin;
+    }
+
+    // nested two levels
+    ol li ol li {
+      list-style-type: circle;
+    }
+  }
+}

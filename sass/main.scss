@@ -14,9 +14,14 @@
 @import "grid/centered_layout";
 @import "grid/column_layout";
 
+// variables for everything
+$base-padding: 4%;
+
 // all the typography \o/
 @import "typography/var"; // must be first
 @import "typography/base";
 
 // colors!
 @import "colors";
+
+@import "lists";

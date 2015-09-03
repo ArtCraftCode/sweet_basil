@@ -136,9 +136,6 @@
           <p class="text-light">this is light text.</p>
           <div class="clear"></div>
         </aside>
-
-
-
       </article>
 
       <article id="typography">
@@ -161,6 +158,62 @@
         <h6>h6 / also available as classes</h6>
       </article>
 
+      <article id="lists">
+        <h1>lists</h1>
+
+        <h2>unordered list</h2>
+        <ul>
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ul>
+              <li>One!</li>
+              <li>Two!</li>
+            </ul>
+          </li>
+          <li>
+            Double nested list
+            <ul>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ul>
+                  <li>Thing two</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>End of list!</li>
+        </ul>
+
+        <h2>ordered list</h2>
+        <ol>
+          <li>Items with things!</li>
+          <li>This is a long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate labore, facilis dolores sapiente hic mollitia accusamus consectetur blanditiis nihil totam ducimus quibusdam amet cumque dolorem vel, omnis natus illo.</li>
+          <li>
+            Here is a nested list:
+            <ol>
+              <li>One!</li>
+              <li>Two!</li>
+            </ol>
+          </li>
+          <li>
+            Double nested list
+            <ol>
+              <li>Thing one</li>
+              <li>
+                Many things
+                <ol>
+                  <li>Thing two</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>End of list!</li>
+        </ol>
+      </article>
+
       <article id="layouts">
         <h1>layouts</h1>
       </article>
@@ -172,7 +225,7 @@
 <script>
   $(document).ready(function() {
     $('article').hide();
-    $('article#colors').show();
+    $('article#lists').show();
 
     $('a').click(function(event) {
       var link = this;
