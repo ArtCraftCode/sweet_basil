@@ -43,8 +43,7 @@ ol {
 // NO BULLETS FOR YOU SIR
 ul.unformatted {
   &.flush {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0px;
   }
   li {
     list-style-type: none;
