@@ -1,0 +1,70 @@
+// DEFAULT SCHEME
+$default: (
+  'white': #FCFCFC,
+  'gray': #282927,
+  primary: #00A388,
+  secondary: #FF6138,
+  light: #79BD8F
+);
+
+$vibrant: (
+  'white': #FCFCFC,
+  'gray': #282927,
+  primary: #D90000,
+  secondary: #04756F,
+  light: #FF8C00
+);
+
+// list of all schemes
+$COLOR-SCHEMES: (
+  vibrant: $vibrant
+);
+
+// helper classes for color schemes
+@each $name, $color in $default {
+  .background-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+body {
+  background-color: map-get($default, 'white');
+  color: map-get($default, 'gray');
+}
+
+a {
+  color: map-get($default, primary);
+  &:hover {
+    color: map-get($default, secondary);
+  }
+  text-decoration: none;
+}
+
+@each $name, $scheme in $COLOR-SCHEMES {
+  body.#{$name}, aside.#{$name} {
+    // background, font
+    background-color: map-get($scheme, 'white');
+    color: map-get($scheme, 'gray');
+
+    // links
+    a {
+      color: map-get($scheme, primary);
+      &:hover {
+        color: map-get($scheme, secondary);
+      }
+    }
+
+    // helpers
+    @each $name, $color in $scheme {
+      .background-#{$name}, .button-background-#{$name} {
+        background-color: $color;
+      }
+      .text-#{$name}, .button-text-#{$name} {
+        color: $color;
+      }
+    }
+  }
+}
