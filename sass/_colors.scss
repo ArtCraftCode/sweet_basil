@@ -37,6 +37,7 @@ body {
 
 a {
   color: map-get($default, primary);
+  transition: all 0.3s ease;
   &:hover {
     color: map-get($default, secondary);
   }
